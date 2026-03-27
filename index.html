@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>XRSC LLC — Strategic Advisory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Instrument+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div id="ll-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+      <defs>
+        <linearGradient id="logoGradLoader" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#3B7EFF"/>
+          <stop offset="100%" stop-color="#7B3FE4"/>
+        </linearGradient>
+      </defs>
+      <g>
+        <path d="M 648.28 496.43 C643.16,497.75 634.51,498.00 593.11,498.00 L 544.00 498.00 L 544.00 472.00 L 568.75 471.75 C582.36,471.61 602.08,471.66 612.56,471.86 C640.71,472.39 647.48,470.24 650.14,459.92 C651.18,455.91 651.08,454.85 649.41,451.45 C645.66,443.82 644.54,443.58 609.50,442.91 C583.70,442.42 577.58,442.02 573.00,440.55 C550.86,433.42 539.69,418.29 541.28,397.61 C542.59,380.48 551.77,368.99 568.28,363.80 C575.37,361.57 576.39,361.53 624.00,361.51 L 672.50 361.50 L 672.50 387.50 L 626.50 388.00 C585.06,388.45 580.18,388.67 577.28,390.26 C573.01,392.59 572.00,394.75 572.00,401.53 C572.00,406.61 572.34,407.54 575.31,410.51 C580.34,415.54 584.09,416.10 612.26,415.98 C626.14,415.93 640.92,416.37 645.09,416.97 C660.34,419.16 673.67,429.48 677.98,442.45 C681.40,452.71 680.67,467.93 676.37,476.26 C671.71,485.26 660.61,493.23 648.28,496.43 ZM 421.77 472.75 L 421.50 497.50 L 406.75 497.78 C398.64,497.93 391.98,497.70 391.95,497.28 C391.74,493.69 391.98,420.69 392.20,420.46 C392.37,420.30 412.98,420.02 438.00,419.83 C481.64,419.51 483.64,419.42 486.96,417.46 C491.95,414.54 494.45,409.72 494.35,403.21 C494.26,397.08 492.25,393.66 486.90,390.50 C483.65,388.59 481.41,388.49 434.75,388.20 C407.94,388.03 386.00,387.56 386.00,387.16 C386.00,386.35 395.21,375.74 403.80,366.65 L 409.33 360.80 L 449.42 361.40 C492.70,362.05 498.10,362.63 506.57,367.59 C512.82,371.26 519.53,379.14 522.06,385.80 C525.05,393.67 525.70,406.41 523.57,415.47 C520.19,429.83 509.75,440.52 495.63,444.07 C493.09,444.71 491.00,445.43 491.00,445.67 C491.00,446.06 497.21,453.16 525.57,485.14 C531.24,491.54 535.61,497.05 535.28,497.39 C534.94,497.73 526.00,498.00 515.41,498.00 L 496.15 498.00 L 494.04 495.25 C492.89,493.74 483.29,482.51 472.72,470.30 L 453.50 448.10 L 437.77 448.05 L 422.03 448.00 ZM 834.78 484.75 L 834.50 497.50 L 791.50 497.62 C767.85,497.68 747.38,497.55 746.00,497.31 C740.17,496.32 725.30,490.35 719.80,486.79 C708.03,479.19 697.67,466.14 692.95,453.00 C689.49,443.35 688.97,422.50 691.91,410.89 C694.60,400.25 700.66,389.66 708.49,381.94 C715.57,374.95 718.08,373.13 727.11,368.51 C739.64,362.08 745.24,361.49 792.50,361.59 L 834.50 361.67 L 834.50 387.50 L 794.00 388.06 C749.05,388.67 748.24,388.79 737.10,395.94 C721.94,405.67 715.96,427.22 723.07,446.57 C725.77,453.92 734.54,462.98 742.45,466.61 C752.96,471.42 758.63,471.96 798.28,471.98 L 835.06 472.00 ZM 385.51 496.99 C385.12,497.62 376.82,498.00 363.59,498.00 L 342.29 498.00 L 323.22 478.31 L 304.14 458.61 L 314.06 447.94 C315.19,446.72 316.22,445.61 317.16,444.59 C323.33,437.91 325.58,435.46 327.46,435.73 C328.82,435.92 329.98,437.56 332.30,440.04 C337.14,445.22 343.64,451.98 373.34,482.74 C380.37,490.02 385.85,496.44 385.51,496.99 ZM 366.76 381.86 C356.18,392.66 342.93,406.04 337.32,411.59 L 327.12 421.69 L 315.53 410.13 L 303.95 398.57 L 322.72 379.78 L 341.48 361.00 L 363.74 361.00 C375.98,361.00 386.00,361.27 386.00,361.61 C386.00,361.95 377.34,371.06 366.76,381.86 Z" class="logo-dark-text" fill="#2C2C2C"/>
+        <path d="M 216.79 385.29 C216.95,386.78 216.64,388.00 216.11,388.00 C214.89,388.00 212.00,385.15 212.00,383.95 C212.00,383.45 210.38,382.22 208.40,381.20 C206.42,380.18 201.27,376.23 196.97,372.43 C189.53,365.84 187.48,362.49 190.25,361.48 C190.94,361.23 204.77,361.39 221.00,361.84 C251.56,362.68 255.31,363.24 256.54,367.11 C257.22,369.27 255.30,373.30 253.98,372.49 C253.47,372.17 252.03,372.58 250.78,373.39 C248.27,375.01 239.27,378.05 231.50,379.90 C228.63,380.59 225.75,382.03 224.74,383.30 C223.04,385.42 222.92,385.43 221.56,383.66 C219.45,380.91 216.43,381.93 216.79,385.29 Z" fill="url(#logoGradLoader)" class="logo-gradient-part"/>
+        <path d="M 262.73 487.77 C268.38,482.14 273.00,477.28 273.00,476.97 C273.00,476.66 283.35,466.06 296.00,453.41 C308.65,440.76 318.98,429.75 318.96,428.95 C318.94,428.15 304.20,412.52 286.21,394.20 L 253.50 360.91 L 219.83 361.20 L 186.16 361.50 L 197.33 373.16 C203.47,379.57 218.33,394.97 230.34,407.38 C242.36,419.79 252.03,430.38 251.84,430.92 C251.42,432.13 224.78,460.21 204.29,481.04 C195.88,489.59 189.00,496.90 189.00,497.29 C189.00,497.68 203.28,498.00 220.73,498.00 L 252.47 498.00 L 262.73 487.77 Z" fill="url(#logoGradLoader)" class="logo-gradient-part"/>
+      </g>
+    </svg>
+  </div>
+  <div id="ll-bar-wrap"><div id="ll-bar"></div></div>
+  <div id="ll-pct">0%</div>
+  <div id="ll-curtain"></div>
+</div>
+
+<!-- CURSOR -->
+<div id="cur-d"></div>
+<div id="cur-r"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo-wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="260 340 600 200">
+      <defs>
+        <linearGradient id="navGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#3B7EFF"/>
+          <stop offset="100%" stop-color="#7B3FE4"/>
+        </linearGradient>
+      </defs>
+      <path d="M 648.28 496.43 C643.16,497.75 634.51,498.00 593.11,498.00 L 544.00 498.00 L 544.00 472.00 L 568.75 471.75 C582.36,471.61 602.08,471.66 612.56,471.86 C640.71,472.39 647.48,470.24 650.14,459.92 C651.18,455.91 651.08,454.85 649.41,451.45 C645.66,443.82 644.54,443.58 609.50,442.91 C583.70,442.42 577.58,442.02 573.00,440.55 C550.86,433.42 539.69,418.29 541.28,397.61 C542.59,380.48 551.77,368.99 568.28,363.80 C575.37,361.57 576.39,361.53 624.00,361.51 L 672.50 361.50 L 672.50 387.50 L 626.50 388.00 C585.06,388.45 580.18,388.67 577.28,390.26 C573.01,392.59 572.00,394.75 572.00,401.53 C572.00,406.61 572.34,407.54 575.31,410.51 C580.34,415.54 584.09,416.10 612.26,415.98 C626.14,415.93 640.92,416.37 645.09,416.97 C660.34,419.16 673.67,429.48 677.98,442.45 C681.40,452.71 680.67,467.93 676.37,476.26 C671.71,485.26 660.61,493.23 648.28,496.43 ZM 421.77 472.75 L 421.50 497.50 L 406.75 497.78 C398.64,497.93 391.98,497.70 391.95,497.28 C391.74,493.69 391.98,420.69 392.20,420.46 C392.37,420.30 412.98,420.02 438.00,419.83 C481.64,419.51 483.64,419.42 486.96,417.46 C491.95,414.54 494.45,409.72 494.35,403.21 C494.26,397.08 492.25,393.66 486.90,390.50 C483.65,388.59 481.41,388.49 434.75,388.20 C407.94,388.03 386.00,387.56 386.00,387.16 C386.00,386.35 395.21,375.74 403.80,366.65 L 409.33 360.80 L 449.42 361.40 C492.70,362.05 498.10,362.63 506.57,367.59 C512.82,371.26 519.53,379.14 522.06,385.80 C525.05,393.67 525.70,406.41 523.57,415.47 C520.19,429.83 509.75,440.52 495.63,444.07 C493.09,444.71 491.00,445.43 491.00,445.67 C491.00,446.06 497.21,453.16 525.57,485.14 C531.24,491.54 535.61,497.05 535.28,497.39 C534.94,497.73 526.00,498.00 515.41,498.00 L 496.15 498.00 L 494.04 495.25 C492.89,493.74 483.29,482.51 472.72,470.30 L 453.50 448.10 L 437.77 448.05 L 422.03 448.00 ZM 834.78 484.75 L 834.50 497.50 L 791.50 497.62 C767.85,497.68 747.38,497.55 746.00,497.31 C740.17,496.32 725.30,490.35 719.80,486.79 C708.03,479.19 697.67,466.14 692.95,453.00 C689.49,443.35 688.97,422.50 691.91,410.89 C694.60,400.25 700.66,389.66 708.49,381.94 C715.57,374.95 718.08,373.13 727.11,368.51 C739.64,362.08 745.24,361.49 792.50,361.59 L 834.50 361.67 L 834.50 387.50 L 794.00 388.06 C749.05,388.67 748.24,388.79 737.10,395.94 C721.94,405.67 715.96,427.22 723.07,446.57 C725.77,453.92 734.54,462.98 742.45,466.61 C752.96,471.42 758.63,471.96 798.28,471.98 L 835.06 472.00 ZM 385.51 496.99 C385.12,497.62 376.82,498.00 363.59,498.00 L 342.29 498.00 L 323.22 478.31 L 304.14 458.61 L 314.06 447.94 C315.19,446.72 316.22,445.61 317.16,444.59 C323.33,437.91 325.58,435.46 327.46,435.73 C328.82,435.92 329.98,437.56 332.30,440.04 C337.14,445.22 343.64,451.98 373.34,482.74 C380.37,490.02 385.85,496.44 385.51,496.99 ZM 366.76 381.86 C356.18,392.66 342.93,406.04 337.32,411.59 L 327.12 421.69 L 315.53 410.13 L 303.95 398.57 L 322.72 379.78 L 341.48 361.00 L 363.74 361.00 C375.98,361.00 386.00,361.27 386.00,361.61 C386.00,361.95 377.34,371.06 366.76,381.86 Z" fill="#0A0A0A"/>
+      <path d="M 262.73 487.77 C268.38,482.14 273.00,477.28 273.00,476.97 C273.00,476.66 283.35,466.06 296.00,453.41 C308.65,440.76 318.98,429.75 318.96,428.95 C318.94,428.15 304.20,412.52 286.21,394.20 L 253.50 360.91 L 219.83 361.20 L 186.16 361.50 L 197.33 373.16 C203.47,379.57 218.33,394.97 230.34,407.38 C242.36,419.79 252.03,430.38 251.84,430.92 C251.42,432.13 224.78,460.21 204.29,481.04 C195.88,489.59 189.00,496.90 189.00,497.29 C189.00,497.68 203.28,498.00 220.73,498.00 L 252.47 498.00 L 262.73 487.77 Z" fill="url(#navGrad)"/>
+    </svg>
+  </div>
+  <div class="nav-links">
+    <a href="#services">Advisory</a>
+    <a href="#how">How We Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="nav-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get in Touch</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-content">
+    <div class="h-label" id="hlabel">
+      <span class="h-label-line"></span>
+      Strategic Advisory · Move Fast. Stay Sharp.
+    </div>
+    <h1 class="h-title">
+      <span class="clip"><span class="cli" id="hc1">Advice that</span></span>
+      <span class="clip"><span class="cli" id="hc2">moves <em>as fast</em></span></span>
+      <span class="clip"><span class="cli" id="hc3">as you do.</span></span>
+    </h1>
+    <div class="h-foot" id="hfoot">
+      <p class="h-desc">XRSC works with founders and operators at the moments that define trajectory. Fast, direct, and fully committed — no committees, no lag, no noise.</p>
+      <div class="h-scroll">
+        <span class="h-scroll-label">Scroll</span>
+        <div class="h-scroll-track"><div class="h-scroll-fill"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mq">
+  <div class="mq-t">
+    <div class="mq-i">Strategic Advisory<span class="mq-sep"></span>Rapid Execution<span class="mq-sep"></span>Decisive Direction<span class="mq-sep"></span>Operator-Led<span class="mq-sep"></span>High Conviction<span class="mq-sep"></span>No Committees<span class="mq-sep"></span>Move Fast<span class="mq-sep"></span></div>
+    <div class="mq-i">Strategic Advisory<span class="mq-sep"></span>Rapid Execution<span class="mq-sep"></span>Decisive Direction<span class="mq-sep"></span>Operator-Led<span class="mq-sep"></span>High Conviction<span class="mq-sep"></span>No Committees<span class="mq-sep"></span>Move Fast<span class="mq-sep"></span></div>
+    <div class="mq-i">Strategic Advisory<span class="mq-sep"></span>Rapid Execution<span class="mq-sep"></span>Decisive Direction<span class="mq-sep"></span>Operator-Led<span class="mq-sep"></span>High Conviction<span class="mq-sep"></span>No Committees<span class="mq-sep"></span>Move Fast<span class="mq-sep"></span></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="sw">
+    <div class="srv-intro rev">
+      <div>
+        <div class="eyebrow"><span class="eyebrow-dot"></span><span class="eyebrow-txt">Advisory Services</span></div>
+        <h2 class="s-h">Sharp focus.<br/><em>Fast outcomes.</em></h2>
+      </div>
+      <p class="srv-sub">Three disciplines. Each one practiced at the pace that today's market demands. Slow advice isn't advice — it's history.</p>
+    </div>
+  </div>
+
+  <div class="h-outer" id="hout">
+    <div class="h-pin" id="hpin">
+      <div class="h-track" id="htrack">
+
+        <div class="sc">
+          <div class="sc-n">01</div>
+          <div class="sc-inner">
+            <div class="sc-tag">Direction</div>
+            <div class="sc-name">Strategic<br/>Direction</div>
+            <p class="sc-body">When the next move sets the course for the next five years, you need a clear head in the room — not a deck. We embed directly with leadership and cut to what matters.</p>
+            <div class="sc-link"><span>Explore</span><span class="sc-link-ico">→</span></div>
+          </div>
+        </div>
+
+        <div class="sc">
+          <div class="sc-n">02</div>
+          <div class="sc-inner">
+            <div class="sc-tag">Execution</div>
+            <div class="sc-name">Go-to-Market<br/>Execution</div>
+            <p class="sc-body">Category leadership closes fast. We build the revenue architecture, sharpen the positioning, and get you in motion before the window does.</p>
+            <div class="sc-link"><span>Explore</span><span class="sc-link-ico">→</span></div>
+          </div>
+        </div>
+
+        <div class="sc">
+          <div class="sc-n">03</div>
+          <div class="sc-inner">
+            <div class="sc-tag">Growth</div>
+            <div class="sc-name">Operational<br/>Growth</div>
+            <p class="sc-body">Velocity without structure breaks. We identify where your machine loses pressure — and fix the right things in the right order. Fast companies stay fast by being precise.</p>
+            <div class="sc-link"><span>Explore</span><span class="sc-link-ico">→</span></div>
+          </div>
+        </div>
+
+        <!-- CTA card -->
+        <div class="sc" style="background:linear-gradient(130deg,#3B7EFF,#7B3FE4);border-color:transparent">
+          <div class="sc-inner">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(32px,3.5vw,48px);font-weight:300;color:#fff;line-height:1.1;letter-spacing:-0.02em;margin-top:20px">
+              The world doesn't wait.<br/><em style="font-style:italic;opacity:0.6">Neither should you.</em>
+            </div>
+            <div style="margin-top:40px">
+              <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;padding:14px 28px;border-radius:100px;font-family:'Instrument Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all 0.3s">Reach Out →</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section id="how">
+  <div class="sw">
+    <div class="how-grid">
+      <div class="how-left">
+        <div class="eyebrow rev"><span class="eyebrow-dot"></span><span class="eyebrow-txt">How We Work</span></div>
+        <div class="how-big rev">X</div>
+        <div class="how-stmt rev">We don't do slow. Every engagement is built around <em>decisive action</em>, not prolonged process.</div>
+        <p class="how-note rev">XRSC is deliberately small and deliberately direct. That's the point. When you work with us, you get the people, not the pitch.</p>
+      </div>
+
+      <div>
+        <div class="steps">
+
+          <div class="step rev">
+            <div class="step-n">I</div>
+            <div>
+              <div class="step-name">Rapid Diagnostic</div>
+              <p class="step-body">We get up to speed fast. Within days — not weeks — we understand your situation, your constraints, and where leverage actually exists.</p>
+            </div>
+          </div>
+
+          <div class="step rev">
+            <div class="step-n">II</div>
+            <div>
+              <div class="step-name">Clear Direction</div>
+              <p class="step-body">No 80-page strategy documents. A clear, opinionated point of view on what you should do next — and why. Conviction, not consensus.</p>
+            </div>
+          </div>
+
+          <div class="step rev">
+            <div class="step-n">III</div>
+            <div>
+              <div class="step-name">Direct Execution</div>
+              <p class="step-body">We stay in the room. Alongside your team, moving the work — not just watching it. Advice without presence is just commentary.</p>
+            </div>
+          </div>
+
+          <div class="step rev">
+            <div class="step-n">IV</div>
+            <div>
+              <div class="step-name">Honest Feedback</div>
+              <p class="step-body">We tell you what we see, not what you want to hear. Speed requires truth. We've earned the right to be direct, and we don't waste it.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <canvas id="c-canvas"></canvas>
+  <div class="sw">
+    <div class="c-inner">
+      <div class="eyebrow c-eyebrow rev" style="justify-content:center"><span class="eyebrow-dot"></span><span class="eyebrow-txt">Get In Touch</span></div>
+      <h2 class="c-h rev">Let's<br/><em>move.</em></h2>
+      <p class="c-sub rev">We're selective. We move fast. If you're building something real and need a sharp mind in your corner — reach out.</p>
+      <a class="c-email rev" href="mailto:contact@xrsc.cc">contact@xrsc.cc</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="180 340 680 210">
+      <defs>
+        <linearGradient id="footGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#3B7EFF" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#7B3FE4" stop-opacity="0.4"/>
+        </linearGradient>
+      </defs>
+      <path d="M 648.28 496.43 C643.16,497.75 634.51,498.00 593.11,498.00 L 544.00 498.00 L 544.00 472.00 L 568.75 471.75 C582.36,471.61 602.08,471.66 612.56,471.86 C640.71,472.39 647.48,470.24 650.14,459.92 C651.18,455.91 651.08,454.85 649.41,451.45 C645.66,443.82 644.54,443.58 609.50,442.91 C583.70,442.42 577.58,442.02 573.00,440.55 C550.86,433.42 539.69,418.29 541.28,397.61 C542.59,380.48 551.77,368.99 568.28,363.80 C575.37,361.57 576.39,361.53 624.00,361.51 L 672.50 361.50 L 672.50 387.50 L 626.50 388.00 C585.06,388.45 580.18,388.67 577.28,390.26 C573.01,392.59 572.00,394.75 572.00,401.53 C572.00,406.61 572.34,407.54 575.31,410.51 C580.34,415.54 584.09,416.10 612.26,415.98 C626.14,415.93 640.92,416.37 645.09,416.97 C660.34,419.16 673.67,429.48 677.98,442.45 C681.40,452.71 680.67,467.93 676.37,476.26 C671.71,485.26 660.61,493.23 648.28,496.43 ZM 421.77 472.75 L 421.50 497.50 L 406.75 497.78 C398.64,497.93 391.98,497.70 391.95,497.28 C391.74,493.69 391.98,420.69 392.20,420.46 C392.37,420.30 412.98,420.02 438.00,419.83 C481.64,419.51 483.64,419.42 486.96,417.46 C491.95,414.54 494.45,409.72 494.35,403.21 C494.26,397.08 492.25,393.66 486.90,390.50 C483.65,388.59 481.41,388.49 434.75,388.20 C407.94,388.03 386.00,387.56 386.00,387.16 C386.00,386.35 395.21,375.74 403.80,366.65 L 409.33 360.80 L 449.42 361.40 C492.70,362.05 498.10,362.63 506.57,367.59 C512.82,371.26 519.53,379.14 522.06,385.80 C525.05,393.67 525.70,406.41 523.57,415.47 C520.19,429.83 509.75,440.52 495.63,444.07 C493.09,444.71 491.00,445.43 491.00,445.67 C491.00,446.06 497.21,453.16 525.57,485.14 C531.24,491.54 535.61,497.05 535.28,497.39 C534.94,497.73 526.00,498.00 515.41,498.00 L 496.15 498.00 L 494.04 495.25 C492.89,493.74 483.29,482.51 472.72,470.30 L 453.50 448.10 L 437.77 448.05 L 422.03 448.00 ZM 834.78 484.75 L 834.50 497.50 L 791.50 497.62 C767.85,497.68 747.38,497.55 746.00,497.31 C740.17,496.32 725.30,490.35 719.80,486.79 C708.03,479.19 697.67,466.14 692.95,453.00 C689.49,443.35 688.97,422.50 691.91,410.89 C694.60,400.25 700.66,389.66 708.49,381.94 C715.57,374.95 718.08,373.13 727.11,368.51 C739.64,362.08 745.24,361.49 792.50,361.59 L 834.50 361.67 L 834.50 387.50 L 794.00 388.06 C749.05,388.67 748.24,388.79 737.10,395.94 C721.94,405.67 715.96,427.22 723.07,446.57 C725.77,453.92 734.54,462.98 742.45,466.61 C752.96,471.42 758.63,471.96 798.28,471.98 L 835.06 472.00 ZM 385.51 496.99 C385.12,497.62 376.82,498.00 363.59,498.00 L 342.29 498.00 L 323.22 478.31 L 304.14 458.61 L 314.06 447.94 C315.19,446.72 316.22,445.61 317.16,444.59 C323.33,437.91 325.58,435.46 327.46,435.73 C328.82,435.92 329.98,437.56 332.30,440.04 C337.14,445.22 343.64,451.98 373.34,482.74 C380.37,490.02 385.85,496.44 385.51,496.99 ZM 366.76 381.86 C356.18,392.66 342.93,406.04 337.32,411.59 L 327.12 421.69 L 315.53 410.13 L 303.95 398.57 L 322.72 379.78 L 341.48 361.00 L 363.74 361.00 C375.98,361.00 386.00,361.27 386.00,361.61 C386.00,361.95 377.34,371.06 366.76,381.86 Z" fill="rgba(255,255,255,0.25)"/>
+      <path d="M 262.73 487.77 C268.38,482.14 273.00,477.28 273.00,476.97 C273.00,476.66 283.35,466.06 296.00,453.41 C308.65,440.76 318.98,429.75 318.96,428.95 C318.94,428.15 304.20,412.52 286.21,394.20 L 253.50 360.91 L 219.83 361.20 L 186.16 361.50 L 197.33 373.16 C203.47,379.57 218.33,394.97 230.34,407.38 C242.36,419.79 252.03,430.38 251.84,430.92 C251.42,432.13 224.78,460.21 204.29,481.04 C195.88,489.59 189.00,496.90 189.00,497.29 C189.00,497.68 203.28,498.00 220.73,498.00 L 252.47 498.00 L 262.73 487.77 Z" fill="url(#footGrad)"/>
+    </svg>
+  </div>
+  <div class="f-copy">© 2025 XRSC LLC. All rights reserved.</div>
+  <div class="f-links">
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="mailto:contact@xrsc.cc">contact@xrsc.cc</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
